@@ -101,4 +101,5 @@ Here are the tasks you should complete:
   - Highcharts - https://api.highcharts.com/highcharts/
   - Data Grid - https://mui.com/x/react-data-grid/
   - Dayjs - https://day.js.org/en/
+
 # games-chart

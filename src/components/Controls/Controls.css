@@ -1,0 +1,15 @@
+.measure-buttons {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.measure-buttons button {
+  padding: 10px 20px;
+  border: 1px solid #888;
+  cursor: pointer;
+}
+
+.measure-buttons button[aria-pressed='true'] {
+  background-color: lightblue;
+}
