@@ -15,9 +15,9 @@ I intentionally did not add `useMemo`, `useCallback`, or `React.memo` throughout
 
 ## Styling approach
 
-Styles are organized by component instead of being collected in a global stylesheet. Each component owns its small CSS file, while MUI-specific adjustments use the library's `sx` API. This keeps styles close to the UI they affect and avoids introducing another styling dependency or additional configuration for a small assignment.
+Styles are kept in small CSS files next to the components they belong to. This was sufficient for the scope of the assignment and did not require additional dependencies or configuration.
 
-In a larger application, I would follow the existing product design system and use shared theme tokens and reusable styled components for spacing, colors, typography, and common controls.
+In a larger application, I would follow the existing product design system and use shared theme tokens and reusable styled components for spacing, colors, typography, and common controls. Depending on the conventions of the codebase, Sass modules or a utility-first approach such as Tailwind CSS could also provide clearer styling rules and better reuse.
 
 ## Loading states
 
@@ -32,7 +32,9 @@ In a production application, the artificial delay would be removed. A shared bra
 
 ## Verification
 
-The project includes tests for metric switching, inclusive date ranges, totals, currency formatting, zero-download RPD, loading states, and request errors.
+The project includes automated tests, coverage reporting, and Prettier formatting.
+
+In a production workflow, these checks could be run automatically in CI/CD together with linting, a production build, and an agreed minimum coverage threshold.
 
 ```bash
 npm test
