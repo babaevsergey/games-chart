@@ -1,5 +1,5 @@
 import * as Highcharts from 'highcharts';
-import { dayjsUtc } from '../../../dayjs';
+import { dayjsUtc } from '../../../lib/dayjs';
 import type { Measure, Response } from '../../../types';
 
 const getChartOptions = (
